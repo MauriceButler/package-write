@@ -4,7 +4,6 @@ var args = require('minimist')(process.argv.slice(2)),
     packageWrite = require('./'),
     fs = require('graceful-fs'),
     argsLength = args._.length,
-    sets = argsLength / 2,
     packagePath,
     packageFile;
 
@@ -17,7 +16,7 @@ if(!argsLength || argsLength % 2 !== 0){
 packagePath = packageWrite.getPackagePath();
 packageFile = packageWrite.getPackage(packagePath);
 
-for (var i = 0; i <= sets; i+=2) {
+for (var i = 0; i < argsLength; i+=2) {
     packageWrite.applyChange(packageFile, args._[i], args._[i + 1]);
 }
 
