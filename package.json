@@ -1,6 +1,6 @@
 {
   "name": "package-write",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Cli and module for easily writing / updating a package.json file",
   "main": "index.js",
   "bin": {
