@@ -1,0 +1,35 @@
+{
+  "name": "package-write",
+  "version": "0.0.0",
+  "description": "Cli and module for easily writing / updating a package.json file",
+  "main": "index.js",
+  "bin": {
+    "package-write": "cli.js"
+  },
+  "scripts": {
+    "test": "node ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MauriceButler/package-write.git"
+  },
+  "keywords": [
+    "package",
+    "json",
+    "write",
+    "read",
+    "update",
+    "config"
+  ],
+  "author": "Maurice BUtler <maurice.butler@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MauriceButler/package-write/issues"
+  },
+  "homepage": "https://github.com/MauriceButler/package-write",
+  "dependencies": {
+    "graceful-fs": "^2.0.3",
+    "merge": "^1.1.3",
+    "minimist": "^0.1.0"
+  }
+}
