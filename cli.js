@@ -23,7 +23,7 @@ for (var i = 0; i < argsLength; i+=2) {
 if(args.test || args.t){
     console.log(packageFile);
 } else {
-    fs.writeFileSync(packagePath, JSON.stringify(packageFile, null, 4));
+    fs.writeFileSync(packagePath, JSON.stringify(packageFile, null, 2));
 }
 
 process.exit(0);
